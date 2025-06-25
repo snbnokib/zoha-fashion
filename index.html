@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zoha Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <button id="menu-btn">☰ Menu</button>
+    <div class="logo">Zoha Fashion</div>
+    <nav id="navbar">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Checkout</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <section class="slideshow">
+  <img id="model-image" src="https://i.etsystatic.com/31788156/r/il/bf012f/4480917547/il_794xN.4480917547_3j10.jpg" alt="Model" />
+  <div class="details">
+    <h2 id="product-name">Elegant White Kurta Pajama</h2>
+    <p id="product-price">1300 BDT</p>
+  </div>
+</section>
+
+  <div class="search-and-tabs">
+    <input type="text" id="search-bar" placeholder="Search for items..." />
+    <div class="tabs">
+      <button class="tab active" data-category="all">All</button>
+      <button class="tab" data-category="men">Men</button>
+      <button class="tab" data-category="women">Women</button>
+      <button class="tab" data-category="kids">Kids</button>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <label for="sort-select">Sort By:</label>
+    <select id="sort-select">
+      <option value="default">Default</option>
+      <option value="price-low">Price: Low to High</option>
+      <option value="price-high">Price: High to Low</option>
+      <option value="rating-high">Rating: High to Low</option>
+    </select>
+
+    <button id="toggle-dark">🌙 Dark Mode</button>
+  </div>
+
+  <section class="products-section">
+    <h2>Our Products</h2>
+    <div class="products-grid" id="product-grid">
+      <!-- Products loaded here by JS -->
+    </div>
+    <button id="load-more">Load More</button>
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: zoha.fashion@example.com</p>
+    <p>Mobile: +8801234567890</p>
+    <p>2025 SNB Nokib All rights reserved. | <a href="mailto:snbnokib@gmail.com">snbnokib@gmail.com</a></p>
+  </section>
+
+  <!-- Cart popup -->
+  <div id="cart-popup" class="cart-popup">
+    <div class="cart-content">
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <div class="cart-total">
+        Total: <span id="cart-total-price">0 BDT</span>
+      </div>
+      <button id="checkout-btn">Checkout</button>
+      <button id="close-cart">Close</button>
+    </div>
+  </div>
+
+  <!-- Cart button -->
+  <button id="cart-button">🛒 Cart (<span id="cart-count">0</span>)</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
