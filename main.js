@@ -125,7 +125,7 @@ const products = [
   {
     name: 'Boys Traditional Panjabi Set',
     price: '790 BDT',
-    img: 'https://mainsailorimagebucket.s3.ap-southeast-1.amazonaws.com/uploads/all/5eHqukYPLnMEBqD30cF7nAnNc9uX2JTjP2MbLfvL.jpg',
+    img: 'https://objectstorage.ap-singapore-1.oraclecloud.com/n/aximxvolvk6d/b/sailorbucket/o/uploads/all/dXOd7qsWcSmFPnkB5JW56KQL5loygayvh0i9tGDb.jpg',
     rating: 4.4,
     discount: '10% OFF',
     category: 'kids'
